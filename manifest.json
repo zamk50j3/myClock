@@ -1,4 +1,5 @@
 {
+    "theme_color": "#333",
     "short_name": "MyClock",
     "name": "MyClock",
     "display": "standalone",

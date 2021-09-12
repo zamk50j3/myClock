@@ -96,12 +96,11 @@ const countDown = () =>{
 /** カウントダウン終了 */
 const countFinish = () =>{
   // 終了音再生
-  const audio = new Audio("../sound/poteto.mp3");
+  const audio = new Audio("/myClock/sound/poteto.mp3");
   audio.play();
 
   // OS毎に処理を変える
   const os_str = window.navigator.userAgent.toLocaleLowerCase();
-  console.log(os_str);
   if(os_str.indexOf("android") !== -1) {
     navigator.vibrate([200, 200, 200, 200]);
   }

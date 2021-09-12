@@ -88,6 +88,7 @@ const countDown = () =>{
   // タイムアップの場合タイマー停止
   if(duration_sec === elapsed_sec){
     countStop();
+    countReset();
     countFinish();
     return;
   }
